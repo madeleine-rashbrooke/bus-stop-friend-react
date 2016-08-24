@@ -17,16 +17,18 @@ class Input extends Component {
 
 
   render() {
+    const { stop, route } = this.props.relevantProps
+
     return (
       <div>
         <h2>Where are you?</h2>
         <input type="text" onChange={this.handleStopChange} />
-        <p>You selected bus stop #{this.props.stop}</p>
+        <p>You selected bus stop #{stop}</p>
 
 
         <h2>What bus is coming?</h2>
         <input type="text" onChange={this.handleRouteChange} />
-        <p>You selected route #{this.props.route}</p>
+        <p>You selected route #{route}</p>
       </div>
 
     )

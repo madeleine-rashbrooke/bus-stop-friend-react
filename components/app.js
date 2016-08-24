@@ -27,17 +27,21 @@ class App extends Component {
 
 
   render () {
+    const relevantProps = {
+      stop: this.state.stop,
+      route: this.state.route
+    }
+
     return (
       <div>
         <h1>{this.props.name}: here to help</h1>
         <Input
           updateStopState={this.updateStopState}
           updateRouteState={this.updateRouteState}
-          stop={this.state.stop}
-          route={this.state.route}
+          relevantProps={relevantProps}
         />
-        <MapDisplay stop={this.state.stop} route={this.state.route}/>
-        <TextDisplay stop={this.state.stop} route={this.state.route}/>
+        <MapDisplay relevantProps={relevantProps} />
+        <TextDisplay relevantProps={relevantProps} />
       </div>
 
     )

@@ -6,9 +6,8 @@ class MapDisplay extends React.Component {
         // this.map = <canvas height=${window.innerHeight}, width=${window.innerWidth} id="canvas"></canvas>
   }
 
-
-
   render() {
+    const { stop, route } = this.props.relevantProps
     //update your map here//
     //this.map.data()
     return (
@@ -17,8 +16,8 @@ class MapDisplay extends React.Component {
         <div id="mapWrapper">
             {/*this.map*/}
         </div>
-        <p>One map layer should show this bus stop #{this.props.stop}</p>
-        <p>One map layer should show this route #{this.props.route}</p>
+        <p>One map layer should show this bus stop #{stop}</p>
+        <p>One map layer should show this route #{route}</p>
       </div>
     )
   }
