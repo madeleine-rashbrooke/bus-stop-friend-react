@@ -16,26 +16,8 @@
   <body>
     <main>
       <h1>Bus Stop Friend - from index.html</h1>
-
-
-      <div id='map'></div>
-
-      <script>
-      L.mapbox.accessToken = 'pk.eyJ1IjoibWFkZWxlaW5lLXJhc2hicm9va2UiLCJhIjoiY2lyeDVqdXRmMDA4OTJ5b2ZxZXc1dDg5dCJ9.6kyfgf7klxvu7UizZNzA9A';
-
-      var map = L.mapbox.map('map', 'mapbox.streets')
-        .setView([-41.2963, 174.7742], 15);
-
-      var featureLayer = L.mapbox.featureLayer()
-        .loadID("madeleine-rashbrooke.15b5e4nd")
-        .addTo(map)
-      </script>
-
-
     </main>
-    <div>
-
-    </div>
+    <div id='map'></div>
     <script src="bundle.js"></script>
   </body>
 </html>
