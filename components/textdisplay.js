@@ -14,7 +14,7 @@ class TextDisplay extends React.Component {
     return (
       <div>
         <h2>Placeholder for text display</h2>
-        <p>There should be a list of places on this route: #{this.state.route}</p>
+        <p>There should be a list of places on this route: #{this.props.route}</p>
       </div>
 
     )
