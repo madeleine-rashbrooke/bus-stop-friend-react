@@ -6,6 +6,8 @@ class MapDisplay extends Component {
         // this.map = <canvas height=${window.innerHeight}, width=${window.innerWidth} id="canvas"></canvas>
   }
 
+
+
   componentDidMount() {
     L.mapbox.accessToken = 'pk.eyJ1IjoibWFkZWxlaW5lLXJhc2hicm9va2UiLCJhIjoiY2lyeDVqdXRmMDA4OTJ5b2ZxZXc1dDg5dCJ9.6kyfgf7klxvu7UizZNzA9A';
 
@@ -19,6 +21,7 @@ class MapDisplay extends Component {
 
   render() {
     const { stop, route } = this.props.relevantProps
+
     //update your map here//
     //this.map.data()
     return (
